@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/style.css">
 <style>
 .legal-content { max-width: 800px !important; padding-bottom: 6rem !important; }
-.legal-content h2 { font-family: var(--font-d); font-size: 1.3rem; font-weight: 800; margin: 2rem 0 0.6rem; color: var(--pink); }
+.legal-content h2 { font-family: var(--font-d); font-size: 1.3rem; font-weight: 800; margin: 2rem 0 0.6rem; color: var(--primary); }
 .legal-content h2:first-of-type { margin-top: 1rem; }
 .legal-content h3 { font-family: var(--font-d); font-size: 1rem; font-weight: 700; margin: 1.2rem 0 0.4rem; }
 .legal-content p { font-size: 0.9rem; color: var(--text-sec); line-height: 1.7; margin-bottom: 0.6rem; }
@@ -28,10 +28,12 @@
 <body>
 
 <div class="top-nav">
-  <a class="top-tab " href="/">Főoldal</a>
-  <a class="top-tab " href="/rolunk/">Rólunk</a>
-  <a class="top-tab " href="/ajanlat/">Ajánlat</a>
-  <a class="top-tab " href="/kapcsolat/">Kapcsolat</a>
+  <a class="top-tab" href="/">Főoldal</a>
+  <a class="top-tab" href="/rolunk/">Rólunk</a>
+  <a class="top-tab" href="/gyik/">GYIK</a>
+  <a class="top-tab" href="/ajanlat/">Ajánlat</a>
+  <a class="top-tab" href="/kapcsolat/">Kapcsolat</a>
+  <a class="top-tab" href="/blog/">Blog</a>
 </div>
 
 <div class="feed" id="feed">
@@ -124,7 +126,7 @@
         <li><strong>Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH):</strong><br>
           Cím: 1055 Budapest, Falk Miksa utca 9-11.<br>
           Telefon: +36 1 391 1400<br>
-          Web: <a href="https://naih.hu" style="color:var(--cyan)" target="_blank">naih.hu</a></li>
+          Web: <a href="https://naih.hu" style="color:var(--secondary)" target="_blank">naih.hu</a></li>
         <li><strong>Bírósági úton:</strong> Az illetékes törvényszékhez fordulhatsz.</li>
       </ul>
 
@@ -135,16 +137,36 @@
 
     </div>
   </div>
+
+<!-- FOOTER -->
+<footer style="background:var(--surface);border-top:1px solid var(--border);padding:2rem 1.5rem 5rem;text-align:center;font-size:0.78rem;color:var(--text-dim);line-height:1.8">
+  <img src="/assets/logo.png" alt="Scroll Studio" style="width:36px;height:36px;border-radius:50%;margin-bottom:0.8rem;opacity:0.7">
+  <div style="margin-bottom:0.6rem;color:var(--text-sec);font-family:var(--font-d);font-weight:700;font-size:0.9rem">Scroll Studio</div>
+  <p>Ügynökségi minőség, AI-sebességgel, vállalkozóbarát áron.</p>
+  <div style="margin:0.8rem 0;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+    <a href="/" style="color:var(--secondary);text-decoration:none">Főoldal</a>
+    <a href="/rolunk/" style="color:var(--secondary);text-decoration:none">Rólunk</a>
+    <a href="/gyik/" style="color:var(--secondary);text-decoration:none">GYIK</a>
+    <a href="/ajanlat/" style="color:var(--secondary);text-decoration:none">Ajánlat</a>
+    <a href="/kapcsolat/" style="color:var(--secondary);text-decoration:none">Kapcsolat</a>
+    <a href="/blog/" style="color:var(--secondary);text-decoration:none">Blog</a>
+  </div>
+  <p style="margin-top:0.5rem">Scroll Studio Kft. · 1101 Budapest, Üllői út 124. A. ép. 3. em. 47.<br>Cégjegyzékszám: 01-09-451539 · Adószám: 32959817-2-42</p>
+  <p style="margin-top:0.8rem">© 2026 Scroll Studio Kft. Minden jog fenntartva.</p>
+</footer>
+
 </div>
 
 <!-- BOTTOM NAV -->
 
 
 <div class="bottom-nav">
-  <a class="bnav " href="/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Főoldal</span></a>
-  <a class="bnav " href="/rolunk/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg><span>Rólunk</span></a>
-  <a class="bnav " href="/ajanlat/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Ajánlat</span></a>
-  <a class="bnav " href="/kapcsolat/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Kapcsolat</span></a>
+  <a class="bnav" href="/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Főoldal</span></a>
+  <a class="bnav" href="/rolunk/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg><span>Rólunk</span></a>
+  <a class="bnav" href="/gyik/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span>GYIK</span></a>
+  <a class="bnav" href="/ajanlat/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Ajánlat</span></a>
+  <a class="bnav" href="/kapcsolat/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Kapcsolat</span></a>
+  <a class="bnav" href="/blog/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span>Blog</span></a>
 </div>
 </body>
 </html>

@@ -5,7 +5,7 @@
 <base href="/scroll-studio-vegleges/">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Scroll Studio — Aki látszik, az játszik.</title>
-<meta name="description" content="Mi felépítjük a jelenléted. 1000+ videó, több millió elérés. Profi social media rendszer, ami helyetted dolgozik.">
+<meta name="description" content="Felépítjük a social media jelenléted a nulláról. 968+ tartalom, mérhető eredmény. Profi social media rendszer, ami helyetted dolgozik.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
@@ -16,7 +16,7 @@
 .cookie-banner p { font-size: 0.82rem; color: var(--text-sec); line-height: 1.5; margin-bottom: 0.8rem; }
 .cookie-banner a { color: var(--gold); text-decoration: none; }
 .cookie-btns { display: flex; gap: 0.5rem; }
-.cookie-accept { padding: 0.5rem 1.2rem; border-radius: 8px; background: var(--pink); color: #fff; border: none; font-family: var(--font); font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+.cookie-accept { padding: 0.5rem 1.2rem; border-radius: 8px; background: var(--primary); color: #fff; border: none; font-family: var(--font); font-size: 0.82rem; font-weight: 600; cursor: pointer; }
 .cookie-reject { padding: 0.5rem 1.2rem; border-radius: 8px; background: transparent; color: var(--text-sec); border: 1px solid var(--border); font-family: var(--font); font-size: 0.82rem; font-weight: 500; cursor: pointer; }
 /* Logo in author bar */
 .author-logo { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,0.15); }
@@ -29,8 +29,10 @@
 <div class="top-nav">
   <a class="top-tab active" href="/">Főoldal</a>
   <a class="top-tab" href="/rolunk/">Rólunk</a>
+  <a class="top-tab" href="/gyik/">GYIK</a>
   <a class="top-tab" href="/ajanlat/">Ajánlat</a>
   <a class="top-tab" href="/kapcsolat/">Kapcsolat</a>
+  <a class="top-tab" href="/blog/">Blog</a>
 </div>
 
 <!-- RIGHT NAV -->
@@ -40,8 +42,9 @@
   <div class="rnav-item" data-s="2" data-tip="Hogyan működik">⚡</div>
   <div class="rnav-item" data-s="3" data-tip="Eredmények">🏆</div>
   <div class="rnav-item" data-s="4" data-tip="Számok">📊</div>
+  <div class="rnav-item" data-s="5" data-tip="GYIK">❓</div>
   <div class="rnav-sep"></div>
-  <div class="rnav-item" data-s="5" data-tip="Indulj el">🚀</div>
+  <div class="rnav-item" data-s="6" data-tip="Indulj el">🚀</div>
 </div>
 <div class="rnav-tooltip" id="tooltip"></div>
 
@@ -60,7 +63,7 @@
         </div>
         <div class="slide-text">
           <h2>Aki látszik,<br><span class="hl">az játszik.</span></h2>
-          <p>Ügynökségi minőség, AI-sebességgel, vállalkozóbarát áron. Tartalomgyártás, videó és stratégia — hogy a te márkád legyen az, akit követnek.</p>
+          <p>Felépítjük a social media jelenléted a nulláról. Profi videó, kész stratégia, mérhető eredmény. Te nem nyúlsz semmihez.</p>
         </div>
         <div style="display:flex;gap:0.6rem;margin-top:1rem;flex-wrap:wrap">
           <a href="/kapcsolat/" class="slide-cta">Egyedi ajánlatot kérek →</a>
@@ -74,7 +77,7 @@
         <div class="phone" data-author="@dhprime" data-likes="4.2K" data-comments="128" data-shares="342">
           <div class="phone-screen">
             <div class="phone-feed">
-              <!-- video removed: file not in repo --><div style="width:100%;height:100%;background:#000"></div>
+              <img src="/assets/hero-bg.png" alt="Scroll Studio" style="width:100%;height:100%;object-fit:cover">
             </div>
             <div class="phone-overlay">
               <div class="phone-pause-icon">⏸</div>
@@ -93,6 +96,7 @@
           </div>
           <div class="phone-bar"><span class="act">🏠</span><span>🔍</span><span>➕</span><span>💬</span><span>👤</span></div>
         </div>
+        <div style="position:absolute;bottom:12%;left:50%;transform:translateX(-50%);background:rgba(124,58,237,0.15);border:1px solid rgba(124,58,237,0.3);padding:0.4rem 1rem;border-radius:100px;font-size:0.7rem;color:var(--secondary);font-weight:600;letter-spacing:0.05em">↓ Referenciáink</div>
       </div>
     </div>
     <div class="scroll-hint"><span>↓ Görgess</span></div>
@@ -105,7 +109,7 @@
       <div class="text-col">
         <div class="author"><img src="/assets/logo.png" alt="Scroll Studio" class="author-logo"><span class="author-name">@scrollstudio</span></div>
         <div class="slide-text">
-          <h2>Nem videókat kapsz.<br><span class="hl">Jelenlétet építünk.</span></h2>
+          <h2>Minden, ami a<br><span class="hl">social media sikerhez kell.</span></h2>
           <p>Teljes körű social media szolgáltatás — a stratégiától a tartalomgyártáson át az analitikáig. Instagram, TikTok, YouTube, Facebook, LinkedIn.</p>
         </div>
         <div class="svc-row">
@@ -140,7 +144,7 @@
         <div class="phone" data-author="@scrollstudio">
           <div class="phone-screen">
             <div class="phone-feed">
-              <!-- video removed: file not in repo --><div style="width:100%;height:100%;background:#000"></div>
+              <img src="/assets/hero-bg.png" alt="Scroll Studio" style="width:100%;height:100%;object-fit:cover">
             </div>
             <div class="phone-overlay">
               <div class="phone-pause-icon">⏸</div>
@@ -170,13 +174,13 @@
       <div class="text-col">
         <div class="author"><img src="/assets/logo.png" alt="Scroll Studio" class="author-logo"><span class="author-name">@scrollstudio</span></div>
         <div class="slide-text">
-          <h2>Ők már látszanak.<br><span class="hl">Te mikor kezded?</span></h2>
-          <p>Nem ígérgetünk — megmutatjuk az eredményt.</p>
+          <h2>Működő<br><span class="hl">partnereink.</span></h2>
+          <p>Ők már látszanak. Te mikor kezded?</p>
         </div>
         <div class="refs-list">
-          <div class="ref-card"><div class="name">DH Prime · Ingatlan</div><p>3x organikus elérés növekedés — a semmiből épített prémium jelenlét.</p></div>
-          <div class="ref-card"><div class="name">Istenhegyi Klinika · Egészségügy</div><p>A foglalások 40%-a social media-ból érkezik.</p></div>
-          <div class="ref-card"><div class="name">Akadémia Plusz · Oktatás</div><p>85%+ kurzus kitöltöttség — 47 jelentkező 30 nap alatt, kizárólag social-ból.</p></div>
+          <div class="ref-card"><div class="name">🏠 DH Prime</div><p>3x organikus elérés növekedés — a semmiből épített prémium jelenlét.</p></div>
+          <div class="ref-card"><div class="name">🏥 Istenhegyi Klinika</div><p>A foglalások 40%-a social media-ból érkezik.</p></div>
+          <div class="ref-card"><div class="name">🎓 Akadémia Plusz</div><p>85%+ kurzus kitöltöttség — 47 jelentkező 30 nap alatt, kizárólag social-ból.</p></div>
         </div>
       </div>
       <div class="visual-col">
@@ -184,7 +188,7 @@
         <div class="phone" data-author="@akademiaplusz">
           <div class="phone-screen">
             <div class="phone-feed">
-              <!-- video removed: file not in repo --><div style="width:100%;height:100%;background:#000"></div>
+              <img src="/assets/hero-bg.png" alt="Scroll Studio" style="width:100%;height:100%;object-fit:cover">
             </div>
             <div class="phone-overlay">
               <div class="phone-pause-icon">⏸</div>
@@ -215,11 +219,44 @@
         <div class="author"><img src="/assets/logo.png" alt="Scroll Studio" class="author-logo"><span class="author-name">@scrollstudio</span></div>
         <div class="slide-text"><h2>A számok<br><span class="hl">magukért beszélnek.</span></h2></div>
         <div class="stats-row">
-          <div class="stat-box"><div class="num" data-target="10" data-suffix="+">0</div><div class="label">Elégedett ügyfél</div></div>
-          <div class="stat-box"><div class="num" data-target="500" data-suffix="+">0</div><div class="label">Legyártott tartalom</div></div>
+          <div class="stat-box"><div class="num" data-target="12" data-suffix="+">0</div><div class="label">Elégedett ügyfél</div></div>
+          <div class="stat-box"><div class="num" data-target="968" data-suffix="+">0</div><div class="label">Elkészített tartalom</div></div>
           <div class="stat-box"><div class="num" data-target="3" data-suffix="+ év">0</div><div class="label">Tapasztalat</div></div>
           <div class="stat-box"><div class="num" data-target="24" data-suffix="h">0</div><div class="label">Válaszidő</div></div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5b. GYIK — gyakori kérdések -->
+  <div class="slide slide--faq">
+    <div class="slide-bg"><div class="particles"></div></div>
+    <div class="slide-content single-col">
+      <div class="text-col">
+        <div class="author"><img src="/assets/logo.png" alt="Scroll Studio" class="author-logo"><span class="author-name">@scrollstudio</span></div>
+        <div class="slide-text">
+          <h2>Gyakori <span class="hl">kérdések</span></h2>
+          <p>Amit a legtöbben kérdeznek — röviden, őszintén.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0.6rem;margin-top:1rem;max-width:600px">
+          <details style="background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;cursor:pointer">
+            <summary style="font-family:var(--font-d);font-weight:700;font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center">Mennyi idő alatt látok eredményt? <span style="color:var(--secondary);font-size:1.2rem">+</span></summary>
+            <p style="margin-top:0.8rem;color:var(--text-sec);font-size:0.88rem;line-height:1.6">1-2 hónap: stratégia felépítés és első tartalmak. 2-3 hónap: mérhető eredmények (elérés, követők, leadek). 3-6 hónap: üzleti hatás.</p>
+          </details>
+          <details style="background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;cursor:pointer">
+            <summary style="font-family:var(--font-d);font-weight:700;font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center">Nekem kell tartalmat gyártanom? <span style="color:var(--secondary);font-size:1.2rem">+</span></summary>
+            <p style="margin-top:0.8rem;color:var(--text-sec);font-size:0.88rem;line-height:1.6">Nem. Mi mindent megcsinálunk — a forgatástól a vágáson át a posztolásig. Neked csak jóvá kell hagyni a tartalmakat.</p>
+          </details>
+          <details style="background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;cursor:pointer">
+            <summary style="font-family:var(--font-d);font-weight:700;font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center">Miért vagytok ilyen gyorsak? <span style="color:var(--secondary);font-size:1.2rem">+</span></summary>
+            <p style="margin-top:0.8rem;color:var(--text-sec);font-size:0.88rem;line-height:1.6">AI-eszközöket használunk a rutinfeladatokra — feliratozás, grafika, analitika. A megtakarított időt kreatív munkára és stratégiára fordítjuk.</p>
+          </details>
+          <details style="background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;cursor:pointer">
+            <summary style="font-family:var(--font-d);font-weight:700;font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center">Milyen platformokon dolgoztok? <span style="color:var(--secondary);font-size:1.2rem">+</span></summary>
+            <p style="margin-top:0.8rem;color:var(--text-sec);font-size:0.88rem;line-height:1.6">Instagram, Facebook, TikTok, LinkedIn, YouTube — és bármi más, ami a te iparágadban működik.</p>
+          </details>
+        </div>
+        <a href="/gyik/" style="display:inline-block;margin-top:1.2rem;color:var(--secondary);font-size:0.85rem;font-weight:600;text-decoration:none">Összes kérdés →</a>
       </div>
     </div>
   </div>
@@ -236,7 +273,7 @@
         </div>
         <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.8rem">
           <a href="/kapcsolat/" class="slide-cta">Ingyenes konzultáció →</a>
-          <a href="/kapcsolat/" class="slide-cta" style="background:transparent;border:1px solid rgba(255,255,255,0.2)">Kérek egyedi ajánlatot</a>
+          <a href="/kapcsolat/" class="slide-cta" style="background:transparent;border:1px solid rgba(255,255,255,0.2)">Megértjük a helyzetedet és egyedi megoldást javaslunk</a>
         </div>
         <div class="slide-tags"><span>#akilátszikazjátszik</span></div>
         <div class="slide-music">🎵 <div class="marquee"><span>Scroll Studio — Aki látszik, az játszik. ✨</span></div></div>
@@ -246,7 +283,7 @@
         <div class="phone" data-author="@scrollstudio">
           <div class="phone-screen">
             <div class="phone-feed">
-              <!-- video removed: file not in repo --><div style="width:100%;height:100%;background:#000"></div>
+              <img src="/assets/hero-bg.png" alt="Scroll Studio" style="width:100%;height:100%;object-fit:cover">
             </div>
             <div class="phone-overlay">
               <div class="phone-pause-icon">⏸</div>
@@ -269,14 +306,33 @@
     </div>
   </div>
 
+<!-- FOOTER -->
+<footer style="background:var(--surface);border-top:1px solid var(--border);padding:2rem 1.5rem 5rem;text-align:center;font-size:0.78rem;color:var(--text-dim);line-height:1.8">
+  <img src="/assets/logo.png" alt="Scroll Studio" style="width:36px;height:36px;border-radius:50%;margin-bottom:0.8rem;opacity:0.7">
+  <div style="margin-bottom:0.6rem;color:var(--text-sec);font-family:var(--font-d);font-weight:700;font-size:0.9rem">Scroll Studio</div>
+  <p>Ügynökségi minőség, AI-sebességgel, vállalkozóbarát áron.</p>
+  <div style="margin:0.8rem 0;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+    <a href="/" style="color:var(--secondary);text-decoration:none">Főoldal</a>
+    <a href="/rolunk/" style="color:var(--secondary);text-decoration:none">Rólunk</a>
+    <a href="/gyik/" style="color:var(--secondary);text-decoration:none">GYIK</a>
+    <a href="/ajanlat/" style="color:var(--secondary);text-decoration:none">Ajánlat</a>
+    <a href="/kapcsolat/" style="color:var(--secondary);text-decoration:none">Kapcsolat</a>
+    <a href="/blog/" style="color:var(--secondary);text-decoration:none">Blog</a>
+  </div>
+  <p style="margin-top:0.5rem">Scroll Studio Kft. · 1101 Budapest, Üllői út 124. A. ép. 3. em. 47.<br>Cégjegyzékszám: 01-09-451539 · Adószám: 32959817-2-42</p>
+  <p style="margin-top:0.8rem">© 2026 Scroll Studio Kft. Minden jog fenntartva.</p>
+</footer>
+
 </div>
 
 <!-- BOTTOM NAV -->
 <div class="bottom-nav">
   <a class="bnav active" href="/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Főoldal</span></a>
   <a class="bnav" href="/rolunk/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg><span>Rólunk</span></a>
+  <a class="bnav" href="/gyik/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span>GYIK</span></a>
   <a class="bnav" href="/ajanlat/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Ajánlat</span></a>
   <a class="bnav" href="/kapcsolat/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Kapcsolat</span></a>
+  <a class="bnav" href="/blog/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span>Blog</span></a>
 </div>
 
 <!-- COOKIE BANNER -->
@@ -291,7 +347,7 @@
 <!-- CHAT -->
 <div class="chat-ov" id="chatOv">
   <div class="chat-box">
-    <div class="chat-hd"><div style="display:flex;align-items:center;gap:0.5rem"><div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--cyan));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.7rem">S</div><div><div style="font-weight:700;font-size:0.85rem">Scroll Asszisztens</div><div style="font-size:0.68rem;color:var(--text-dim)">● Online</div></div></div><button onclick="toggleChat()" style="background:none;border:none;color:var(--text-dim);font-size:1.2rem;cursor:pointer">✕</button></div>
+    <div class="chat-hd"><div style="display:flex;align-items:center;gap:0.5rem"><div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.7rem">S</div><div><div style="font-weight:700;font-size:0.85rem">Scroll Asszisztens</div><div style="font-size:0.68rem;color:var(--text-dim)">● Online</div></div></div><button onclick="toggleChat()" style="background:none;border:none;color:var(--text-dim);font-size:1.2rem;cursor:pointer">✕</button></div>
     <div class="chat-msgs" id="cmsgs"><div class="chat-m bot"><div class="chat-b">Szia! 👋 Segítek felépíteni a rendszered. Mondd el, mire van szükséged!</div></div></div>
     <div class="chat-q" id="cq"><button onclick="sq('Videós tartalmat szeretnék')">🎥 Videó</button><button onclick="sq('Social media kezelést keresek')">📱 Social</button><button onclick="sq('Hirdetéskezelés érdekel')">📈 Hirdetés</button><button onclick="sq('Segíts!')">🤔 Segíts!</button></div>
     <div class="chat-input-row"><input type="text" id="ci" placeholder="Írd le, miben segíthetek..." onkeydown="if(event.key==='Enter')sm()"><button onclick="sm()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div>

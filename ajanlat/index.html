@@ -25,15 +25,15 @@
   text-align: center; letter-spacing: 0.15em; text-transform: uppercase;
   outline: none; transition: border-color 0.3s;
 }
-.code-input:focus { border-color: var(--pink); }
+.code-input:focus { border-color: var(--primary); }
 .code-input::placeholder { color: var(--text-dim); font-weight: 400; letter-spacing: 0.05em; font-size: 0.9rem; }
 .code-btn {
-  padding: 0.85rem 1.5rem; border-radius: 10px; background: var(--pink); color: #fff;
+  padding: 0.85rem 1.5rem; border-radius: 10px; background: var(--primary); color: #fff;
   border: none; font-family: var(--font); font-size: 0.92rem; font-weight: 700;
   cursor: pointer; transition: all 0.3s; white-space: nowrap;
 }
 .code-btn:hover { box-shadow: 0 6px 20px rgba(254,44,85,0.4); }
-.code-error { color: var(--pink); font-size: 0.82rem; margin-top: 0.6rem; display: none; }
+.code-error { color: var(--primary); font-size: 0.82rem; margin-top: 0.6rem; display: none; }
 .code-hint { color: var(--text-dim); font-size: 0.78rem; margin-top: 1.5rem; }
 
 /* Offer view (shown after code entry) */
@@ -46,7 +46,7 @@
 .offer-header .badge {
   display: inline-block; padding: 0.3rem 0.9rem; border-radius: 100px;
   background: rgba(254,44,85,0.1); border: 1px solid rgba(254,44,85,0.2);
-  color: var(--pink); font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+  color: var(--primary); font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
   letter-spacing: 0.1em; margin-bottom: 0.8rem;
 }
 .offer-header h2 { font-family: var(--font-d); font-size: 1.8rem; font-weight: 800; margin-bottom: 0.3rem; }
@@ -58,7 +58,7 @@
 }
 .offer-card::before {
   content: ''; position: absolute; top: -1px; left: 15%; right: 15%; height: 1px;
-  background: linear-gradient(90deg, transparent, var(--pink), var(--cyan), transparent);
+  background: linear-gradient(90deg, transparent, var(--primary), var(--secondary), transparent);
 }
 .offer-card h3 {
   font-family: var(--font-d); font-size: 1.1rem; font-weight: 700;
@@ -84,16 +84,16 @@
 .offer-total .ot-label { font-family: var(--font-d); font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; }
 .offer-total .ot-price {
   font-family: var(--font-d); font-weight: 800; font-size: 1.8rem;
-  background: linear-gradient(135deg, var(--pink), var(--cyan));
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
 }
 
 .offer-note {
-  background: rgba(37,244,238,0.06); border-left: 3px solid var(--cyan);
+  background: rgba(37,244,238,0.06); border-left: 3px solid var(--secondary);
   border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: 1.2rem;
   font-size: 0.88rem; color: var(--text-sec); line-height: 1.6;
 }
-.offer-note strong { color: var(--cyan); }
+.offer-note strong { color: var(--secondary); }
 
 .offer-valid {
   text-align: center; font-size: 0.82rem; color: var(--text-dim); margin-bottom: 1.5rem;
@@ -103,7 +103,7 @@
   display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap;
 }
 .offer-accept {
-  padding: 0.85rem 2rem; border-radius: 10px; background: var(--pink); color: #fff;
+  padding: 0.85rem 2rem; border-radius: 10px; background: var(--primary); color: #fff;
   border: none; font-family: var(--font); font-size: 1rem; font-weight: 700;
   cursor: pointer; transition: all 0.3s;
 }
@@ -114,7 +114,7 @@
   font-family: var(--font); font-size: 0.92rem; font-weight: 500;
   cursor: pointer; transition: all 0.3s; text-decoration: none;
 }
-.offer-secondary:hover { border-color: var(--cyan); color: var(--cyan); }
+.offer-secondary:hover { border-color: var(--secondary); color: var(--secondary); }
 
 @media(max-width:480px) {
   .code-input-wrap { flex-direction: column; }
@@ -151,10 +151,12 @@
 <script src="/ribbons.js"></script>
 
 <div class="top-nav">
-  <a class="top-tab " href="/">Főoldal</a>
-  <a class="top-tab " href="/rolunk/">Rólunk</a>
+  <a class="top-tab" href="/">Főoldal</a>
+  <a class="top-tab" href="/rolunk/">Rólunk</a>
+  <a class="top-tab" href="/gyik/">GYIK</a>
   <a class="top-tab active" href="/ajanlat/">Ajánlat</a>
-  <a class="top-tab " href="/kapcsolat/">Kapcsolat</a>
+  <a class="top-tab" href="/kapcsolat/">Kapcsolat</a>
+  <a class="top-tab" href="/blog/">Blog</a>
 </div>
 
 <div class="feed" id="feed">
@@ -172,7 +174,7 @@
           <button class="code-btn" onclick="checkCode()">Megnyitom →</button>
         </div>
         <div class="code-error" id="codeError">Ez a kód nem érvényes. Ellenőrizd, vagy kérdezz minket!</div>
-        <div class="code-hint">Nincs kódod? <a href="/kapcsolat/" style="color:var(--cyan);text-decoration:none">Kérj konzultációt</a> és küldünk egyet.</div>
+        <div class="code-hint">Nincs kódod? <a href="/kapcsolat/" style="color:var(--secondary);text-decoration:none">Kérj konzultációt</a> és küldünk egyet.</div>
       </div>
 
       <!-- OFFER VIEW (shown after valid code) -->
@@ -212,6 +214,24 @@
       </div>
     </div>
   </div>
+
+<!-- FOOTER -->
+<footer style="background:var(--surface);border-top:1px solid var(--border);padding:2rem 1.5rem 5rem;text-align:center;font-size:0.78rem;color:var(--text-dim);line-height:1.8">
+  <img src="/assets/logo.png" alt="Scroll Studio" style="width:36px;height:36px;border-radius:50%;margin-bottom:0.8rem;opacity:0.7">
+  <div style="margin-bottom:0.6rem;color:var(--text-sec);font-family:var(--font-d);font-weight:700;font-size:0.9rem">Scroll Studio</div>
+  <p>Ügynökségi minőség, AI-sebességgel, vállalkozóbarát áron.</p>
+  <div style="margin:0.8rem 0;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+    <a href="/" style="color:var(--secondary);text-decoration:none">Főoldal</a>
+    <a href="/rolunk/" style="color:var(--secondary);text-decoration:none">Rólunk</a>
+    <a href="/gyik/" style="color:var(--secondary);text-decoration:none">GYIK</a>
+    <a href="/ajanlat/" style="color:var(--secondary);text-decoration:none">Ajánlat</a>
+    <a href="/kapcsolat/" style="color:var(--secondary);text-decoration:none">Kapcsolat</a>
+    <a href="/blog/" style="color:var(--secondary);text-decoration:none">Blog</a>
+  </div>
+  <p style="margin-top:0.5rem">Scroll Studio Kft. · 1101 Budapest, Üllői út 124. A. ép. 3. em. 47.<br>Cégjegyzékszám: 01-09-451539 · Adószám: 32959817-2-42</p>
+  <p style="margin-top:0.8rem">© 2026 Scroll Studio Kft. Minden jog fenntartva.</p>
+</footer>
+
 </div>
 
 <!-- BOTTOM NAV -->
@@ -318,10 +338,12 @@ if (urlCode) {
 }
 </script>
 <div class="bottom-nav">
-  <a class="bnav " href="/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Főoldal</span></a>
-  <a class="bnav " href="/rolunk/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg><span>Rólunk</span></a>
+  <a class="bnav" href="/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Főoldal</span></a>
+  <a class="bnav" href="/rolunk/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg><span>Rólunk</span></a>
+  <a class="bnav" href="/gyik/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span>GYIK</span></a>
   <a class="bnav active" href="/ajanlat/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Ajánlat</span></a>
-  <a class="bnav " href="/kapcsolat/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Kapcsolat</span></a>
+  <a class="bnav" href="/kapcsolat/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Kapcsolat</span></a>
+  <a class="bnav" href="/blog/"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span>Blog</span></a>
 </div>
 </body>
 </html>
